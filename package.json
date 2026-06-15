@@ -1,0 +1,70 @@
+{
+  "name": "pepkio-dose-curve-fitter",
+  "version": "0.1.0",
+  "description": "Call the Pepkio Dose-Response Curve Fitter REST API from Node.js with typed ESM imports and a CLI.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "pepkio-dose-curve-fitter": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --exclude '**/integration.test.ts'",
+    "test:integration": "vitest run integration.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepkio/pepkio-dose-curve-fitter-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pepkio/pepkio-dose-curve-fitter-js/issues"
+  },
+  "homepage": "https://www.pepkio.com/tools/dose-curve-fitter",
+  "keywords": [
+    "dose-response",
+    "ic50",
+    "ec50",
+    "dose-curve-fitter",
+    "pepkio",
+    "hts",
+    "pharmacology",
+    "curve-fit",
+    "bioinformatics",
+    "life-sciences",
+    "typescript",
+    "node",
+    "rest-api",
+    "scientific-computing"
+  ],
+  "author": "Pepkio Team",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "dotenv": "^16.5.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
