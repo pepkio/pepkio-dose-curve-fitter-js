@@ -1,6 +1,6 @@
 {
   "name": "pepkio-dose-curve-fitter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Call the Pepkio Dose-Response Curve Fitter REST API from Node.js with typed ESM imports and a CLI.",
   "readme": "README_NPM.md",
   "type": "module",
@@ -19,7 +19,9 @@
     "pepkio-dose-curve-fitter": "./dist/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "README_NPM.md"
   ],
   "scripts": {
     "build": "tsup",
