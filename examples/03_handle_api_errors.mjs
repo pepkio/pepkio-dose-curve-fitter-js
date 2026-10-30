@@ -32,7 +32,6 @@ async function main() {
     }
   }
 
-  console.log("\n2. Testing resilient execution with valid manifest input...");
   const examples = await client.listExamples();
   if (examples.length > 0) {
     const validInput = await client.getExampleInput(examples[0]);
