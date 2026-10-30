@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 export const TOOL_ID = "dose-curve-fitter";
 export const DEFAULT_API_BASE_URL = "https://tools.pepkio.com";
 

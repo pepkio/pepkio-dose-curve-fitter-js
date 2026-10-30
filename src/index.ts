@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 export { PepkioClient, type PepkioClientOptions } from "./client.js";
 export {
   TOOL_ID,

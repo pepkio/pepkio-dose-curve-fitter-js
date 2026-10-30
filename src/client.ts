@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import {
   TOOL_ID,
   apiPath,

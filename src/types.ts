@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 export type RunStatus = "queued" | "running" | "completed" | "failed" | (string & {});
 
 export interface RunOptions {
